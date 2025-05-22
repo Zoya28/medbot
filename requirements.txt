@@ -5,3 +5,4 @@ langchain_core
 langchain_huggingface
 langchain_community
 langchain_text_splitters
+faiss
