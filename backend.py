@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
 from langchain_core.prompts import PromptTemplate
@@ -8,7 +7,6 @@ from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
 
-load_dotenv()
 groq_token = os.getenv("GROQ_API_KEY")
 
 # Step 1: Load PDFs
